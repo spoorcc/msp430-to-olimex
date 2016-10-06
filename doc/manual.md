@@ -1,24 +1,21 @@
 # Info
 
-[Datasheet](http://www.ti.com/lit/ds/symlink/msp430g2553.pdf)
-[Famiy user guide](http://www.ti.com/lit/ug/slau144j/slau144j.pdf)
-Header file
-
+* [Datasheet](http://www.ti.com/lit/ds/symlink/msp430g2553.pdf)
+* [Famiy user guide](http://www.ti.com/lit/ug/slau144j/slau144j.pdf)
 
 ## Dependencies
 
-mspgcc
-mspdebug
-Qt5
-Qt5SerialPort
+* mspgcc
+* mspdebug
+* Qt5
+* Qt5SerialPort
 
 ## Usage
 
-
 ### Creating MSP elf
 
-  cd msp_bin
-  make
+    cd msp_bin
+    make
 
 now an Elf file is created which can be transferred to the device
 
@@ -28,10 +25,9 @@ Open up the debugger:
 
 Optionally erase the device, program it and run the program.
 
-   (mspdebug) erase
-   (mspdebug) prog main.elf
-   (mspdebug) run
-   
+    (mspdebug) erase
+    (mspdebug) prog main.elf
+    (mspdebug) run
 
 ### Building SerialSender
 
